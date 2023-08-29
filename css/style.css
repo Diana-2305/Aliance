@@ -26,6 +26,7 @@
   top:0;
   z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s;
 }
 
 .header{
@@ -53,6 +54,13 @@
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
+}
+.navbar-light{
+  background-color:#fff;
+  color:#292D33;
+}
+.navbar-light .header-logo-path{
+  fill: #292D33;
 }
 .header-nav{
   flex-basis: 100%;
