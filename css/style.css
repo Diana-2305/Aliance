@@ -1,25 +1,27 @@
 *{
   box-sizing: border-box;
 }
+html{
+  font-size: 16px;
+}
 @font-face {
   font-family: "Bebas Neue Book";
   src:url("..//fonts/BebasNeueBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   }
-  
 .body{
   font-family: 'Noto Sans', sans-serif;
 }
 .container{
-  max-width: 1440px;
+  max-width: 90rem;
   margin: auto;
 }
 .navbar{
   display: flex;
   align-items: center;
   color: #fff;
-  height: 94px;
+  height: 5.875rem;
   position: fixed;
   width: 100%;
   left: 0;
@@ -28,16 +30,15 @@
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   transition: background-color 0.2s; height: 0.2s;
 }
-
 .header{
-  padding-top: 94px;
+  padding-top: 5.875rem;
   min-height: 100vh;
 }
 .header-image{
   background-image: url('../img/header-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom -3.4375rem;
   position: relative;
 }
 .header-image::before{
@@ -45,7 +46,7 @@
   top:0;
   left: 0;
   position: absolute;
-  background-color:rgba(41, 45, 51, 0.6);
+  background-color:rgba(41, 45, 51, 0.75);
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -53,9 +54,13 @@
 .header-logo{
   display: flex;
   align-items:center;
-  padding: 0px 50px;
+  padding: 0rem 3.125rem;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
+}
+.logo-svg{
+  width: 9rem;
+  height: 2.75rem;
 }
 .navbar-light{
   background-color:#fff;
@@ -69,13 +74,16 @@
   flex-basis: 100%;
   display: flex;
   list-style: none;
-  padding: 0 50px;
+  padding: 0;
+  padding-left:  3.125rem;
   margin: 0; 
+}
+.header-nav-items:not(last-child){
+  margin-right: 4%;
 }
 .header-nav-link{
   text-decoration: none;
-  font-size: 16px;
-  margin-right: 50px;
+  font-size: 1rem;
   color: inherit;
   
 }
@@ -88,17 +96,17 @@
 }
 .header-phone-link{
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: inherit;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 .button{
   font-weight: 600;
-  font-size: 16px; 
+  font-size: 1rem; 
   line-height: 160%;
   color:#fff;
   background: #3A71D1;
-  padding: 25px 60px;
+  padding: 1.5625rem 3.75rem;
   border: none;
   display:inline-block;
   cursor: pointer;
@@ -112,33 +120,35 @@
 }
 .seporator{
   background: #5C8EE5;
-  width: 150px;
-  height: 2px;
+  width: 9.375rem;
+  height: .125rem;
 }
 .header-content{
-  padding-top: 150px;
+  padding-top: 9.375rem;
   position: relative;
   z-index: 1;
   color:#fff
 }
 .header-title{
-  max-width: 1080px;
+  letter-spacing: 0.5px;
+  word-spacing: -0.0062rem;
+  max-width: 67.5rem;
   font-family: "Bebas Neue Book";
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 120%;  
   margin: 30px 0;
 }
 .header-text{
-  max-width: 720px;
+  max-width: 45rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .header-features{
   display: flex;
-  min-height: 168px;
+  min-height: 10.5rem;
   padding: 0;
   margin-top: 100px;
   list-style: none;
@@ -146,24 +156,24 @@
   position: relative;
 }
 .header-features-item{
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   border:1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-item:not(:last-child){
     border-right: none
 }
 .header-features-text{
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 line-height: 160%;
 }
 .section{
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
 }
 .section-title{
   font-family: "Bebas Neue Book";
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 120%;
   color:#292D33;
 }
@@ -171,14 +181,14 @@ line-height: 160%;
   display:flex;
   list-style: none;
   padding:0;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .steps-item{
-  max-width: 330px;
+  max-width: 20.625rem;
 }
 .steps-num{
 font-family: "Bebas Neue book";
-font-size: 48px;
+font-size: 3rem;
 line-height: 120%;
 color:#5C8EE5;
 display: flex;
@@ -190,25 +200,25 @@ align-items: center;
   height: 1px;
   background:#EBEBF0;
   width: 100%;
-  margin-left: 30px;
+  margin-left: 1.875rem;
   
 }
 .steps-title{
-font-size: 28px;
+font-size: 1.75rem;
 font-weight: 400;
 line-height: 160%;
 color:#292D33;
-margin-top: 30px;
-margin-bottom: 10px;
+margin-top: 1.875rem;
+margin-bottom: .625rem;
 
 }
 .steps-text{
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 line-height: 160%;
 color:#828A99;
-margin-top: 10px;
-margin-bottom: 20px;
+margin-top: .625rem;
+margin-bottom: 1.25rem;
 }
 .steps-link{
 color:#5C8EE5;
@@ -216,7 +226,7 @@ display: flex;
 align-items:center;
 text-decoration: none;
 font-weight: 600;
-font-size: 16px;
+font-size: 1rem;
 line-height: 160%;
 }
 .steps-link:before{
@@ -224,8 +234,13 @@ line-height: 160%;
   height: 1px;
   background:#5C8EE5;
   width: 40px;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
-  
-
-
+@media (max-width:1200px){
+  html{
+    font-size: 14px;
+  }
+}
+.header-image{
+  background-position:center;
+}
