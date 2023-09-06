@@ -315,6 +315,7 @@ line-height: 160%;
     height: 1px;
     background-color:#fff;
     width: 100%;
+    transition: transform 0.2s;
   }
   .mobile-menu-line:nth-child(2) {
     width: 80%;
@@ -390,13 +391,20 @@ line-height: 160%;
   }
   .mobile-info-address, 
   .mobile-info-email {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  color:#292D33;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color:#292D33
   }
-}   
-  
-
-
+  .close-menu .mobile-menu-line:nth-child(2) {
+    display:none; 
+  } 
+  .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+  .close-menu .mobile-menu-line:nth-child(3){
+    transform: rotate(-45deg) translateY(-9px); 
+  }
+}
