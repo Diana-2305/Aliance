@@ -187,7 +187,6 @@ html{
   cursor: pointer;
   align-items:center; 
 }
-
 .header-features-text{
 font-size: 1rem;
 font-weight: 400;
@@ -206,12 +205,13 @@ color:#fff;
 }
 .steps{
   display:flex;
-  list-style: none;
-  padding:0;
+  list-style:none;
+  padding: 0rem;
   gap: 1.875rem;
 }
 .steps-item{
-  max-width: 20.625rem;
+  max-width: 20.625rem
+  
 }
 .steps-num{
 font-family: "Bebas Neue book";
@@ -245,7 +245,7 @@ font-weight: 400;
 line-height: 160%;
 color:#828A99;
 margin-top: .625rem;
-margin-bottom: 1.25rem;
+margin-bottom: 1.875rem;
 }
 .steps-link{
 color:#5C8EE5;
