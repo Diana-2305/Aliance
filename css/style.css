@@ -79,19 +79,46 @@ html{
 .header-nav{
   flex-basis: 100%;
   display: flex;
+  align-items:center;
+  height: 100%;
   list-style: none;
   padding: 0;
   padding-left:  3.125rem;
   margin: 0; 
 }
+.header-nav-items{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
 .header-nav-items:not(last-child){
   margin-right: 4%;
+
 }
 .header-nav-link{
+  display: flex;
+  height: 100%;
+  align-items:center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
-  
+  position: relative;
+}
+.header-nav-link:after{
+  content:"";
+  height: 2px;
+  position: absolute;
+  width: 0px;
+  bottom:-1px;
+  background-color:#5C8EE5;
+
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+.header-nav-link:hover::after {
+  width: 100%;
 }
 .header-phone{
   flex-shrink: 0;
@@ -272,11 +299,62 @@ font-size: 1rem;
 line-height: 160%;
 }
 .steps-link:before{
-  content:'';
+  content:"";
   height: 1px;
   background:#5C8EE5;
   width: 40px;
   margin-right: 1.25rem;
+  transition: width 0.2s;
+}
+.steps-link:hover:before{
+  width: 60px;
+
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  
+} 
+.card{
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  position: relative;
+  text-decoration: none;
+  transition: border 0.2s;
+}
+.card:hover .card-title{
+  color: #5C8EE5;
+}
+.card:hover{
+  border-color: #5C8EE5;
+}
+.card-title{
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  transition: color 0.2s;
+}
+.card-text{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+  color: #828A99;
+  margin-bottom: 24.625rem;
+} 
+.card-image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 90%;
+}
+.card-content{
+  padding: 2.5rem  3.125rem;
 }
 @media (max-width: 1460px) { 
   html{
@@ -307,7 +385,7 @@ line-height: 160%;
   }
   .slider-buttons{
     display: flex;
-  }
+  } 
   .header-phone{
     display: none;
   }
@@ -321,7 +399,14 @@ line-height: 160%;
   .steps-buttons{
     display: flex;
   }
-}  
+  .card{
+    flex-basis: 50%;
+  }
+
+} 
+
+
+
 @media (max-width:992px){
   html{
     font-size: 12px;
@@ -455,6 +540,9 @@ line-height: 160%;
   }
   .header-content{
     padding-top: 3rem;
+  }
+  .card{
+    flex-basis: 100%;
   }
 }
 @media (max-width:576x){
