@@ -771,27 +771,5 @@ line-height: 160%;
     flex-basis:50%;
   }
 }
-@media (max-width: 400px){
-  .container {
-    max-width: 90%;
-  }
-  .header-title {
-    font-size: 2rem;
-  }
-  .header-content{
-    padding-top: 2rem;
-  }
-  .trademark-card{
-    grid-template-areas: 
-    "logo title"
-    "text text";
-  }
-  .clients-list{
-    columns: 1;
-  }
-  .clients-logo-item{
-    flex-basis:50%;
-  }
 
-}
 

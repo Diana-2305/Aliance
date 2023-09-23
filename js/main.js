@@ -83,24 +83,20 @@ const swiper = new Swiper(".features-slider", {
 }); 
 const swiperBlog = new Swiper(".blog-slider", {
   speed: 400,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween:30,
   navigation: {
     prevEl: ".blog-button-prev",
     nextEl: ".blog-button-next",
   },
   breakpoints: {
-    // when window width is >= 0px
-     450: {
-      slidesPerView: 1, 
-    },
     // when window width is >= 320px
     576: {
       slidesPerView: 1, 
     },
     // when window width is >= 480px
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     // when window widt h is >= 640px
     1024: {
