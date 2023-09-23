@@ -91,7 +91,7 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
   breakpoints: {
     // when window width is >= 0px
-     400: {
+     450: {
       slidesPerView: 1, 
     },
     // when window width is >= 320px
