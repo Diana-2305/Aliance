@@ -90,6 +90,10 @@ const swiperBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-next",
   },
   breakpoints: {
+    // when window width is >= 0px
+     400: {
+      slidesPerView: 1, 
+    },
     // when window width is >= 320px
     576: {
       slidesPerView: 1, 
