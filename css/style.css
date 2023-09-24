@@ -526,7 +526,6 @@ line-height: 160%;
  margin: 0;
 
 }
-
 .blog-crad-image{
   position: absolute;
   left:0;
@@ -535,6 +534,113 @@ line-height: 160%;
   height: 100%;
   object-fit: cover;
   z-index: -2;
+}
+.bg-grey{
+  background: #F0F2F5;
+  
+}
+.section-cta{
+  position: relative;
+  padding-top: 6.25rem;
+  margin-top: 9.375rem;
+  padding-bottom: 6.25rem;
+}
+.cta-image{
+  position: absolute;
+  bottom:0;
+  left:0;
+  max-width: 45rem;
+  width: 50%;
+
+}
+.cta-from-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+.cta-form{
+  max-width: 51.25rem;
+}
+.cta-form-text{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+ line-height: 160%; 
+ color:#828A99;
+ margin-top: 1.375rem;
+ margin-bottom: 2.5rem;
+ max-width: 40rem;
+}
+.input-group-wrapper{
+  display: flex;
+  gap:1.875rem;
+}
+.input-group-label{
+  position: absolute;
+  cursor:text;
+  top: 1.5rem;
+  left: 1.975rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+  color:#828A99;
+  transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+.input-group{
+  position: relative;
+  height: 4.125rem;
+  flex-grow: 1;
+  background-color:#F0F2F5;
+}
+.input{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  padding: 1.25rem 1.875rem;
+  border: 1px solid #e4e4e4;
+  background-color:transparent;
+  
+}
+.input:focus{
+  border: 1px solid #5C8EE5;
+  outline: 0;
+  
+}  
+.input:focus ~.input-group-label,
+.input:not(:placeholder-shown) .input:not(:focus) ~ .input-group-label{
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: .625rem;
+  background-color: inherit;
+  padding: 0 .625rem;
+}
+.cta-form-footer{
+  display: flex;
+  margin-top: 1.25rem;
+  gap: 1.875rem;
+  align-items:center;
+}
+.cta-form-button{
+  flex-shrink: 0; 
+}
+.notify{
+  display: flex;
+  align-items: flex-start;
+  gap: .625rem;
+}
+.notify-icon{
+  flex-shrink: 0; 
+}
+.notify-text{
+  max-width: 23.75rem;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color:#828A99;
 }
 @media (max-width: 1460px) { 
   html{
@@ -558,14 +664,15 @@ line-height: 160%;
   .header-image{
     background-position:center;
   }
+
 }
+
 @media (max-width: 1200px) {
   .container{
     max-width: 70rem;
   }
   .trademark-card{
     grid-template-columns: auto auto;
-
   }
   .slider-buttons{
     display: flex;
@@ -599,6 +706,10 @@ line-height: 160%;
   .clients-content{
     flex-basis: 60%;
   } 
+  .cta-image{
+    max-width: 31.25rem;
+    width: 50%;
+  }
 }
 @media (max-width: 992px) {
   html{
@@ -729,6 +840,10 @@ line-height: 160%;
   .clients-wrapper{
     flex-direction: column;
   }
+  .cta-image{
+    max-width: 18.75rem;
+    width: 50%;
+  }
 }
 @media (max-width: 760px) {
   .container {
@@ -748,10 +863,85 @@ line-height: 160%;
     width: 100%;
     margin-bottom: 3.125rem;
   }
+  .bg-grey{
+    background: #F0F2F5;
+  }
+  .cta-image{
+    display: none;
+  }
+  .section-cta{
+    position: relative;
+    padding-top: 3.125rem;
+    margin-top: 3.125rem;
+    padding-bottom: 6.25rem;
+  }
+  .cta-from-wrapper{
+    display: flow-root;
+    width: 100%;
+
+  }
+  .cta-form{
+    max-width: 21.5625rem;   
+  }
+  .input{
+    padding: 1.25rem 1.875rem;
+  }
+  .input-group-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  .cta-from-wrapper{
+    display: center;
+  }
+  .input-group{
+    position: relative;
+    height: 3.875rem;
+  }
+  .input-group-label{
+    top: 1.2rem;
+    left: 1.975rem;
+    font-size: 14px;
+  
+  }
+  .notify{
+    display: flex;
+    align-items: stretch;
+    gap: .625rem;
+  }
+  .cta-form-footer{
+    flex-direction: column;
+    margin-top: .625rem;
+    margin-bottom: 1.875rem;
+    
+  }
+  .cta-form-button{
+    width: 100%;
+  }
+  .cta-content {
+    width: 100%;
+    height: 100%;
+  }
+  .cta-form-text{
+   margin-top: .625rem;
+   margin-bottom: 1.875rem;
+   max-width: 21.5625rem;
+  }
+  .cta-form{
+    max-width: 100%;
+  }
+  .cta-form-text{
+    max-width: 100%;
+   }
+ .notify-text{
+   max-width: 100%;
+  }
 }
 @media (max-width:576px){
   .container {
     max-width: 90%;
+    padding: 0 1.3rem;
   }
   .header-title {
     font-size: 2rem;
@@ -771,5 +961,3 @@ line-height: 160%;
     flex-basis:50%;
   }
 }
-
-
