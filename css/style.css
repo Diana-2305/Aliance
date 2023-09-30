@@ -681,6 +681,7 @@ line-height: 160%;
 .footer-seporator {
   color:#EBEBF0;
   background-color:#EBEBF0;
+  border:none;
 }
 .footer-bottom {
   padding-top: 3.125rem;
