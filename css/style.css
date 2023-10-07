@@ -68,8 +68,20 @@ html{
 .navbar-light{
   background-color:#fff;
   color:#292D33;
+}
+.logo-dark{
+  display: none;
+}
+.navbar-scroll{
   height: 72px;
 }
+.navbar-light .logo-light{
+  display: none;
+}
+.navbar-light .logo-dark{
+  display: block;
+}
+
 .phone-icon {
     fill:#5C8EE5;
 }
