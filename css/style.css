@@ -172,6 +172,7 @@ html{
   background: #5C8EE5;
   width: 9.375rem;
   height: .125rem;
+  
 }
 .header-content{
   padding-top: 9.375rem;
@@ -850,6 +851,73 @@ line-height: 160%;
   width:100%;
   display:block;
 }
+.header-inside{
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 1920px;
+  height: 364px;
+  flex-shrink: 0;
+  background: var(--bg2, #F0F2F5);
+  color: #F0F2F5;
+  display: block;
+  
+}
+.header-inside-content{
+  padding-top: 9rem;
+  padding: 15rem, 5.125rem;
+  position: relative;
+  z-index: 2;
+  color:#fff;
+ 
+}
+.header-title-inside{
+  letter-spacing: 0.5px;
+  word-spacing: -0.0062rem;
+  max-width: 60rem;
+  max-height: 6rem;
+  font-family: "Bebas Neue Book";
+  font-size: 5rem;
+  line-height: 120%; 
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  color:#292D33;
+}
+.breadcrumb-item-prev{
+  text-decoration: none;
+  color: #828A99;
+
+  margin-right: .625rem;
+}
+.breadcrumb-item-prev:after{
+  position: absolute;
+  content: "";
+  display: block;
+  margin: 0 60px;
+  width: .875rem;
+  font-weight: 400;
+  margin-top: -0.45rem;
+  height: 1px;
+  background: var(--txt2, #828A99);
+  gap: 10px;
+}
+.breadcrumb-item{
+  text-decoration: none;
+  color: #292D33;
+  
+}
+.breadcrumb-list{
+  display: ruby-base-container;
+  list-style-type: none;
+}
+.breadcrumb-link{
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
 
 @media (max-width: 1460px) { 
   html{
